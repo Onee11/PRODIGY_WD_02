@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background: #f7f7f7;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stopwatch-container {
+    background: #2d1846;
+    padding: 3rem 4rem 2.5rem 4rem;
+    border-radius: 2.5rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    text-align: center;
+    min-width: 540px;
+    max-width: 90vw;
+}
+
+.stopwatch-container h1 {
+    margin-bottom: 2.2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.stopwatch-display {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1.5rem;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.stopwatch-display {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: none;
+    padding: 0;
+    box-shadow: none;
+    color: #fff;
+}
+
+.stopwatch-labels {
+    display: flex;
+    justify-content: center;
+    gap: 6.5rem;
+    margin-bottom: 2.2rem;
+    margin-top: -1.2rem;
+}
+
+.stopwatch-labels span {
+    font-size: 1.1rem;
+    color: #b9b3c6;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.stopwatch-controls {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.stopwatch-controls button {
+    min-width: 140px;
+    background: #e09be3;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 0.9rem 0;
+    border-radius: 2rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.stopwatch-controls button#start {
+    background: #b983ff;
+    color: #fff;
+}
+
+.stopwatch-controls button#pause {
+    background: #f7aef8;
+    color: #fff;
+}
+
+.stopwatch-controls button#reset {
+    background: #4b405a;
+    color: #fff;
+}
+
+.stopwatch-controls button#lap {
+    background: #ffe066;
+    color: #2d1846;
+}
+
+.stopwatch-controls button:hover {
+    filter: brightness(1.08);
+    box-shadow: 0 4px 16px rgba(224, 155, 227, 0.18);
+}
+
+.stopwatch-laps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 180px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.stopwatch-laps li {
+    background: rgba(255,255,255,0.08);
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: #fff;
+}

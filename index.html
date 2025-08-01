@@ -5,17 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internship Web Development Task-02</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
     <div class="stopwatch-container">
-        <h1>Stopwatch</h1>
-        <div id="display" class="stopwatch-display">00:00:00.000</div>
+        <h1>Online Timer &amp; Stopwatch</h1>
+        <div id="display" class="stopwatch-display">
+            <span id="minutes">00</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+            <span>:</span>
+            <span id="centiseconds">00</span>
+        </div>
+        <div class="stopwatch-labels">
+            <span>Minutes</span>
+            <span>Seconds</span>
+            <span>Centiseconds</span>
+        </div>
         <div class="stopwatch-controls">
             <button id="start">Start</button>
             <button id="pause">Pause</button>
-            <button id="reset">Reset</button>
             <button id="lap">Lap</button>
+            <button id="reset">Reset</button>
         </div>
         <ul id="laps" class="stopwatch-laps"></ul>
     </div>
